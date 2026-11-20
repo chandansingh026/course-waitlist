@@ -1,0 +1,577 @@
+[ {
+  "sequence" : 18,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:35.565061200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 19,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1002",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1002\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.574067300+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 20,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1003",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1003\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.582059300+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 21,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.634446700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 22,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "cleanup",
+  "step" : "drop learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "135" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"droppedLearnerId\":\"learner-1001\",\"promotedLearnerId\":null,\"skippedIneligibleCount\":0,\"remainingCapacity\":2}",
+  "timestamp" : "2026-11-19T23:19:35.654448200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 23,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:35.674444800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 24,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1002",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1002\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.685467600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 25,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1003",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1003\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.694447100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 26,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.704454100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 27,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "before",
+  "step" : "snapshot before learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:35.715450700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 28,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "before",
+  "step" : "snapshot before learner-1002",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1002\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.726444800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 29,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "before",
+  "step" : "snapshot before learner-1003",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1003\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.736454200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 30,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "before",
+  "step" : "snapshot before learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.747453200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 31,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "register learner-1001",
+  "httpStatus" : 201,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":true}",
+  "timestamp" : "2026-11-19T23:19:35.761444500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 32,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:35.773451800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 33,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1002",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1002\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.787469200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 34,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1003",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1003\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.797450300+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 35,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.807445300+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 36,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "register learner-1002",
+  "httpStatus" : 201,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":true}",
+  "timestamp" : "2026-11-19T23:19:35.818447600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 37,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:35.829449400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 38,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:35.879329100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 39,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1003",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1003\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.890333400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 40,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.903357200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 41,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "register learner-1003",
+  "httpStatus" : 201,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":true}",
+  "timestamp" : "2026-11-19T23:19:35.918377600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 42,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1003 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:35.931337500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 43,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1003 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:35.945338300+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 44,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1003 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:35.960300900+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 45,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1003 learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:35.970313+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 46,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "after",
+  "step" : "snapshot after learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:35.980303600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 47,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "after",
+  "step" : "snapshot after learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:35 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:35.994893600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 48,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "after",
+  "step" : "snapshot after learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:36 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:36.002893600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 49,
+  "testCaseId" : "TC02",
+  "scenario" : "Course full waitlist",
+  "phase" : "after",
+  "step" : "snapshot after learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:36 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:36.012917900+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+} ]

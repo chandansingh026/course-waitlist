@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC03",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Duplicates preserve enrolled count and waitlist position",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}

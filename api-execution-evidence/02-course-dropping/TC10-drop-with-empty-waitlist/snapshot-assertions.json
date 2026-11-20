@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC10",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Empty-waitlist drop leaves one seat free",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}

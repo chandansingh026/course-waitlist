@@ -1,0 +1,42 @@
+{
+  "request" : {
+    "sequence" : 364,
+    "testCaseId" : "TC14",
+    "scenario" : "Multiple sequential promotions",
+    "phase" : "cleanup",
+    "step" : "drop learner-1002",
+    "method" : "DELETE",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.083878800+05:30",
+    "expected" : {
+      "httpStatus" : [ 200 ],
+      "responseFields" : { }
+    }
+  },
+  "response" : {
+    "sequence" : 364,
+    "testCaseId" : "TC14",
+    "scenario" : "Multiple sequential promotions",
+    "phase" : "cleanup",
+    "step" : "drop learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "145" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"droppedLearnerId\":\"learner-1002\",\"promotedLearnerId\":\"learner-1042\",\"skippedIneligibleCount\":0,\"remainingCapacity\":0}",
+    "timestamp" : "2026-11-19T23:19:39.087874400+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }
+}

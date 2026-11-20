@@ -1,0 +1,109 @@
+[ {
+  "sequence" : 125,
+  "testCaseId" : "TC04",
+  "scenario" : "Ineligible learner",
+  "phase" : "scenario",
+  "step" : "register not-eligible",
+  "httpStatus" : 422,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:36 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Prerequisite is not satisfied\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations\",\"status\":422,\"title\":\"Unprocessable Content\",\"type\":\"urn:course-waitlist:ineligible\"}",
+  "timestamp" : "2026-11-19T23:19:36.887784+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 126,
+  "testCaseId" : "TC04",
+  "scenario" : "Ineligible learner",
+  "phase" : "scenario",
+  "step" : "snapshot after register not-eligible learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:36 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:36.898946100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 127,
+  "testCaseId" : "TC04",
+  "scenario" : "Ineligible learner",
+  "phase" : "scenario",
+  "step" : "snapshot after register not-eligible learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:36 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:36.909164+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 128,
+  "testCaseId" : "TC04",
+  "scenario" : "Ineligible learner",
+  "phase" : "scenario",
+  "step" : "snapshot after register not-eligible learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:36 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:36.921133+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 129,
+  "testCaseId" : "TC04",
+  "scenario" : "Ineligible learner",
+  "phase" : "scenario",
+  "step" : "snapshot after register not-eligible learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:36 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:36.929259700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 130,
+  "testCaseId" : "TC04",
+  "scenario" : "Ineligible learner",
+  "phase" : "scenario",
+  "step" : "lookup rejected learner",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:36 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/not-eligible\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:36.938214700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+} ]

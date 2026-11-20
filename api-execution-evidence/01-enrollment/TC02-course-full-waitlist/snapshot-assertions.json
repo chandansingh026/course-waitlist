@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC02",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Two enrolled, first waiter correct",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}

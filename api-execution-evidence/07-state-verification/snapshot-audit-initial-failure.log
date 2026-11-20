@@ -1,0 +1,3 @@
+The first offline snapshot-audit attempt failed before producing results:
+Argument types do not match (PowerShell ArgumentException while converting a
+generic list). This was a post-processing error, not an HTTP scenario failure.

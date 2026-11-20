@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC13",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Multiple waiters retain FIFO positions",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}

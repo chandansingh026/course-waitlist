@@ -1,0 +1,685 @@
+[ {
+  "sequence" : 500,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.205205900+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 501,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.212595500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 502,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.222511200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 503,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.232594700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 504,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "drop learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "135" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"droppedLearnerId\":\"learner-1001\",\"promotedLearnerId\":null,\"skippedIneligibleCount\":0,\"remainingCapacity\":1}",
+  "timestamp" : "2026-11-19T23:19:40.243593+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 505,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.253589200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 506,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.261601100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 507,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.270595+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 508,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.279587600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 509,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "drop learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "135" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"droppedLearnerId\":\"learner-1002\",\"promotedLearnerId\":null,\"skippedIneligibleCount\":0,\"remainingCapacity\":2}",
+  "timestamp" : "2026-11-19T23:19:40.289615+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 510,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-2 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.298598200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 511,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-2 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.307591400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 512,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-2 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.322588700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 513,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-2 learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.333591500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 514,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "before",
+  "step" : "snapshot before learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.342593900+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 515,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "before",
+  "step" : "snapshot before learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.351589+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 516,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "before",
+  "step" : "snapshot before learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.357581100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 517,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "before",
+  "step" : "snapshot before learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.365633800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 518,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "register learner-1001",
+  "httpStatus" : 201,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":true}",
+  "timestamp" : "2026-11-19T23:19:40.374587600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 519,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.381587500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 520,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.429480700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 521,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.437483100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 522,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.445485100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 523,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "register learner-1002",
+  "httpStatus" : 201,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":true}",
+  "timestamp" : "2026-11-19T23:19:40.455477800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 524,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.463476900+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 525,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.472485400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 526,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.479608+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 527,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.488610+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 528,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "concurrent request 1",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "135" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"droppedLearnerId\":\"learner-1001\",\"promotedLearnerId\":null,\"skippedIneligibleCount\":0,\"remainingCapacity\":1}",
+  "timestamp" : "2026-11-19T23:19:40.497607600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 529,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "concurrent request 2",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "135" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"droppedLearnerId\":\"learner-1002\",\"promotedLearnerId\":null,\"skippedIneligibleCount\":0,\"remainingCapacity\":2}",
+  "timestamp" : "2026-11-19T23:19:40.497607600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 530,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after concurrent requests learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.513164300+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 531,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after concurrent requests learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.521128900+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 532,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after concurrent requests learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.529222300+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 533,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "scenario",
+  "step" : "snapshot after concurrent requests learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.536223400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 534,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "after",
+  "step" : "snapshot after learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.543218+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 535,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "after",
+  "step" : "snapshot after learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.550750800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 536,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "after",
+  "step" : "snapshot after learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.558743700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 537,
+  "testCaseId" : "TC17",
+  "scenario" : "Simultaneous drops",
+  "phase" : "after",
+  "step" : "snapshot after learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:40.567011100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+} ]

@@ -1,0 +1,595 @@
+[ {
+  "sequence" : 267,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "register learner-1001",
+  "httpStatus" : 201,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":true}",
+  "timestamp" : "2026-11-19T23:19:38.264578800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 268,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.271586900+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 269,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.279581200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 270,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.289585200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 271,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:38.298586400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 272,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "register learner-1002",
+  "httpStatus" : 201,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":true}",
+  "timestamp" : "2026-11-19T23:19:38.346731900+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 273,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.357751700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 274,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.368731500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 275,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.376732400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 276,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1002 learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:38.387730500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 277,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "register learner-1003",
+  "httpStatus" : 201,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":true}",
+  "timestamp" : "2026-11-19T23:19:38.397728200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 278,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1003 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.403737800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 279,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1003 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.410735200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 280,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1003 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.417759200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 281,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1003 learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:38.422847500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 282,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "register learner-1042",
+  "httpStatus" : 201,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"WAITLISTED\",\"waitlistPosition\":2,\"created\":true}",
+  "timestamp" : "2026-11-19T23:19:38.431749800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 283,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1042 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.436961800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 284,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1042 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.442955800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 285,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1042 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.447958100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 286,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1042 learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"WAITLISTED\",\"waitlistPosition\":2,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.452957+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 287,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot queue-before-drop learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.457959+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 288,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot queue-before-drop learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.465953400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 289,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot queue-before-drop learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.471957100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 290,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot queue-before-drop learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"WAITLISTED\",\"waitlistPosition\":2,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.478956100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 291,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "drop learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "145" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"droppedLearnerId\":\"learner-1001\",\"promotedLearnerId\":\"learner-1003\",\"skippedIneligibleCount\":0,\"remainingCapacity\":0}",
+  "timestamp" : "2026-11-19T23:19:38.483954200+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 292,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after drop learner-1001 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.488960600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 293,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after drop learner-1001 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.494958700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 294,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after drop learner-1001 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.499954500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 295,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot after drop learner-1001 learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.504956700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 296,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot first-promotion learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.510963300+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 297,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot first-promotion learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.516963100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 298,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot first-promotion learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "114" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.522972300+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 299,
+  "testCaseId" : "TC11",
+  "scenario" : "FIFO promotion",
+  "phase" : "scenario",
+  "step" : "snapshot first-promotion learner-1042",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:38 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:38.529957700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+} ]

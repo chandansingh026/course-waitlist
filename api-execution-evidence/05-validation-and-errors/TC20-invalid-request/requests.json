@@ -1,0 +1,289 @@
+[ {
+  "sequence" : 603,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1001",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.205113300+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 604,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1002",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.210111+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 605,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1003",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.215111700+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 606,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1042",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.221115+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 607,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "before",
+  "step" : "snapshot before learner-1001",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.226570100+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 608,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "before",
+  "step" : "snapshot before learner-1002",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.230566700+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 609,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "before",
+  "step" : "snapshot before learner-1003",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.235569500+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 610,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "before",
+  "step" : "snapshot before learner-1042",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.241617300+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 611,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "scenario",
+  "step" : "malformed JSON",
+  "method" : "POST",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close",
+    "Content-Type" : "application/json; charset=utf-8",
+    "Content-Length" : "1"
+  },
+  "body" : "{",
+  "timestamp" : "2026-11-19T23:19:41.248568300+05:30",
+  "expected" : {
+    "httpStatus" : [ 400 ],
+    "responseFields" : {
+      "status" : 400
+    }
+  }
+}, {
+  "sequence" : 612,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "scenario",
+  "step" : "numeric learner ID",
+  "method" : "POST",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close",
+    "Content-Type" : "application/json; charset=utf-8",
+    "Content-Length" : "17"
+  },
+  "body" : "{\"learnerId\":123}",
+  "timestamp" : "2026-11-19T23:19:41.255570900+05:30",
+  "expected" : {
+    "httpStatus" : [ 400 ],
+    "responseFields" : {
+      "status" : 400
+    }
+  }
+}, {
+  "sequence" : 613,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "after",
+  "step" : "snapshot after learner-1001",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.262571700+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 614,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "after",
+  "step" : "snapshot after learner-1002",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.266571100+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 615,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "after",
+  "step" : "snapshot after learner-1003",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.271565300+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 616,
+  "testCaseId" : "TC20",
+  "scenario" : "Malformed request",
+  "phase" : "after",
+  "step" : "snapshot after learner-1042",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:41.277565600+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+} ]

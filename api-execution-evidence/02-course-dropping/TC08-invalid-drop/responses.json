@@ -1,0 +1,307 @@
+[ {
+  "sequence" : 183,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.511506500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 184,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.518504700+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 185,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.524508400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 186,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:37.530502100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 187,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "before",
+  "step" : "snapshot before learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.535501500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 188,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "before",
+  "step" : "snapshot before learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.540504600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 189,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "before",
+  "step" : "snapshot before learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.546501400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 190,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "before",
+  "step" : "snapshot before learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:37.552501400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 191,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "scenario",
+  "step" : "drop learner-1001",
+  "httpStatus" : 409,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Learner is not enrolled\",\"instance\":\"/api/v1/offerings/CS101-FALL/enrollments/learner-1001\",\"status\":409,\"title\":\"Conflict\",\"type\":\"urn:course-waitlist:conflict\"}",
+  "timestamp" : "2026-11-19T23:19:37.559506900+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 192,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "scenario",
+  "step" : "snapshot after drop learner-1001 learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.564503500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 193,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "scenario",
+  "step" : "snapshot after drop learner-1001 learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.572502+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 194,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "scenario",
+  "step" : "snapshot after drop learner-1001 learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.578505800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 195,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "scenario",
+  "step" : "snapshot after drop learner-1001 learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:37.584508100+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 196,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "after",
+  "step" : "snapshot after learner-1001",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.590508600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 197,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "after",
+  "step" : "snapshot after learner-1002",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.596501800+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 198,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "after",
+  "step" : "snapshot after learner-1003",
+  "httpStatus" : 200,
+  "headers" : {
+    "Content-Type" : [ "application/json" ],
+    "Content-Length" : [ "113" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+  "timestamp" : "2026-11-19T23:19:37.602514300+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+}, {
+  "sequence" : 199,
+  "testCaseId" : "TC08",
+  "scenario" : "Drop when not enrolled",
+  "phase" : "after",
+  "step" : "snapshot after learner-1042",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Registration not found\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1042\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:37.609504600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+} ]

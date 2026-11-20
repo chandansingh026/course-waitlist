@@ -1,0 +1,2134 @@
+{
+  "id" : "TC16",
+  "name" : "Duplicate concurrent enrollment",
+  "folder" : "04-concurrency/TC16-duplicate-concurrent-enrollment",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requests" : [ {
+    "sequence" : 451,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.846200300+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 452,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.852202300+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 453,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.857203+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 454,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.864202400+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 455,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "drop learner-1001",
+    "method" : "DELETE",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.871235800+05:30",
+    "expected" : {
+      "httpStatus" : [ 200 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 456,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-1 learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.879206900+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 457,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-1 learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.886204900+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 458,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-1 learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.892201100+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 459,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-1 learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.898199300+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 460,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "drop learner-1002",
+    "method" : "DELETE",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.903198400+05:30",
+    "expected" : {
+      "httpStatus" : [ 200 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 461,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-2 learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.910208600+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 462,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-2 learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.916200+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 463,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-2 learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.923201600+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 464,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-2 learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.929200700+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 465,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "drop learner-1003",
+    "method" : "DELETE",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.936203100+05:30",
+    "expected" : {
+      "httpStatus" : [ 200 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 466,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-3 learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.944197900+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 467,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-3 learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.951206800+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 468,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-3 learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.957213300+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 469,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-3 learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.964202+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 470,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "drop learner-1042",
+    "method" : "DELETE",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.970207+05:30",
+    "expected" : {
+      "httpStatus" : [ 200 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 471,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-4 learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.979199500+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 472,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-4 learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.986201600+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 473,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-4 learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.991208400+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 474,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-4 learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:39.996202200+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 475,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "before",
+    "step" : "snapshot before learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.001206200+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 476,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "before",
+    "step" : "snapshot before learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.006200600+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 477,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "before",
+    "step" : "snapshot before learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.014199600+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 478,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "before",
+    "step" : "snapshot before learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.019203700+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 479,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "register learner-1001",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "36"
+    },
+    "body" : "{\r\n  \"learnerId\" : \"learner-1001\"\r\n}",
+    "timestamp" : "2026-11-19T23:19:40.024201600+05:30",
+    "expected" : {
+      "httpStatus" : [ 201 ],
+      "responseFields" : {
+        "status" : "ENROLLED"
+      }
+    }
+  }, {
+    "sequence" : 480,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after register learner-1001 learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.035206800+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 481,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after register learner-1001 learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.041199400+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 482,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after register learner-1001 learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.045197500+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 483,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after register learner-1001 learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.051206+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 484,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 1",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "28"
+    },
+    "body" : "{\"learnerId\":\"learner-1002\"}",
+    "timestamp" : "2026-11-19T23:19:40.058204200+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 201 ],
+      "responseFields" : {
+        "status" : "ENROLLED"
+      }
+    }
+  }, {
+    "sequence" : 485,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 2",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "28"
+    },
+    "body" : "{\"learnerId\":\"learner-1002\"}",
+    "timestamp" : "2026-11-19T23:19:40.058204200+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 201 ],
+      "responseFields" : {
+        "status" : "ENROLLED"
+      }
+    }
+  }, {
+    "sequence" : 486,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 3",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "28"
+    },
+    "body" : "{\"learnerId\":\"learner-1002\"}",
+    "timestamp" : "2026-11-19T23:19:40.058204200+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 201 ],
+      "responseFields" : {
+        "status" : "ENROLLED"
+      }
+    }
+  }, {
+    "sequence" : 487,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 4",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "28"
+    },
+    "body" : "{\"learnerId\":\"learner-1002\"}",
+    "timestamp" : "2026-11-19T23:19:40.058204200+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 201 ],
+      "responseFields" : {
+        "status" : "ENROLLED"
+      }
+    }
+  }, {
+    "sequence" : 488,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 5",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "28"
+    },
+    "body" : "{\"learnerId\":\"learner-1002\"}",
+    "timestamp" : "2026-11-19T23:19:40.058204200+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 201 ],
+      "responseFields" : {
+        "status" : "ENROLLED"
+      }
+    }
+  }, {
+    "sequence" : 489,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 6",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "28"
+    },
+    "body" : "{\"learnerId\":\"learner-1002\"}",
+    "timestamp" : "2026-11-19T23:19:40.060206100+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 201 ],
+      "responseFields" : {
+        "status" : "ENROLLED"
+      }
+    }
+  }, {
+    "sequence" : 490,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 7",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "28"
+    },
+    "body" : "{\"learnerId\":\"learner-1002\"}",
+    "timestamp" : "2026-11-19T23:19:40.060206100+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 201 ],
+      "responseFields" : {
+        "status" : "ENROLLED"
+      }
+    }
+  }, {
+    "sequence" : 491,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 8",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "28"
+    },
+    "body" : "{\"learnerId\":\"learner-1002\"}",
+    "timestamp" : "2026-11-19T23:19:40.058204200+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 201 ],
+      "responseFields" : {
+        "status" : "ENROLLED"
+      }
+    }
+  }, {
+    "sequence" : 492,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after concurrent requests learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.127208100+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 493,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after concurrent requests learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.138222700+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 494,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after concurrent requests learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.145204100+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 495,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after concurrent requests learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.152199+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 496,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "after",
+    "step" : "snapshot after learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.159225400+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 497,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "after",
+    "step" : "snapshot after learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.164214900+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 498,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "after",
+    "step" : "snapshot after learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.170216300+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 499,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "after",
+    "step" : "snapshot after learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:40.176208100+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  } ],
+  "responses" : [ {
+    "sequence" : 451,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.849201700+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 452,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.855220200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 453,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.860204700+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 454,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"WAITLISTED\",\"waitlistPosition\":2,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.867213+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 455,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "drop learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "145" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"droppedLearnerId\":\"learner-1001\",\"promotedLearnerId\":\"learner-1002\",\"skippedIneligibleCount\":0,\"remainingCapacity\":0}",
+    "timestamp" : "2026-11-19T23:19:39.876206700+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 456,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-1 learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.883202100+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 457,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-1 learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.889213100+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 458,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-1 learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.895211900+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 459,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-1 learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.901216+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 460,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "drop learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "145" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"droppedLearnerId\":\"learner-1002\",\"promotedLearnerId\":\"learner-1042\",\"skippedIneligibleCount\":0,\"remainingCapacity\":0}",
+    "timestamp" : "2026-11-19T23:19:39.907205200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 461,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-2 learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.913210500+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 462,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-2 learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.920203300+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 463,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-2 learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.926206400+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 464,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-2 learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.933210300+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 465,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "drop learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "135" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"droppedLearnerId\":\"learner-1003\",\"promotedLearnerId\":null,\"skippedIneligibleCount\":0,\"remainingCapacity\":1}",
+    "timestamp" : "2026-11-19T23:19:39.940203100+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 466,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-3 learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.948207900+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 467,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-3 learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.955226100+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 468,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-3 learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.961208400+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 469,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-3 learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.967215200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 470,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "drop learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "135" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"droppedLearnerId\":\"learner-1042\",\"promotedLearnerId\":null,\"skippedIneligibleCount\":0,\"remainingCapacity\":2}",
+    "timestamp" : "2026-11-19T23:19:39.975208400+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 471,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-4 learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.984205500+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 472,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-4 learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.989202300+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 473,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-4 learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.994202700+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 474,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-4 learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:39 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:39.999219+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 475,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "before",
+    "step" : "snapshot before learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.004208200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 476,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "before",
+    "step" : "snapshot before learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.010200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 477,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "before",
+    "step" : "snapshot before learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.017201200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 478,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "before",
+    "step" : "snapshot before learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.021199900+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 479,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "register learner-1001",
+    "httpStatus" : 201,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":true}",
+    "timestamp" : "2026-11-19T23:19:40.031208400+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 480,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after register learner-1001 learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.038207100+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 481,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after register learner-1001 learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.043202100+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 482,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after register learner-1001 learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.048218100+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 483,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after register learner-1001 learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.053208600+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 484,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 1",
+    "httpStatus" : 201,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":true}",
+    "timestamp" : "2026-11-19T23:19:40.065207700+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 485,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 2",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.066214100+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 486,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 3",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.067214200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 487,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 4",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.066214100+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 488,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 5",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.067214200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 489,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 6",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.067214200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 490,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 7",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.067214200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 491,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "concurrent request 8",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.068204500+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 492,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after concurrent requests learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.133207+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 493,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after concurrent requests learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.143201300+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 494,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after concurrent requests learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.149211600+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 495,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "scenario",
+    "step" : "snapshot after concurrent requests learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.155208+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 496,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "after",
+    "step" : "snapshot after learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.162203200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 497,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "after",
+    "step" : "snapshot after learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "114" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.167200900+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 498,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "after",
+    "step" : "snapshot after learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.173213200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 499,
+    "testCaseId" : "TC16",
+    "scenario" : "Duplicate concurrent enrollment",
+    "phase" : "after",
+    "step" : "snapshot after learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:40.180228300+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  } ],
+  "snapshots" : [ {
+    "label" : "cleanup-0",
+    "timestamp" : "2026-11-19T23:19:39.870203300+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 2,
+    "remainingCapacity" : 0,
+    "waitlistOrder" : [ "learner-1002", "learner-1042" ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "WAITLISTED",
+      "waitlistPosition" : 1
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "WAITLISTED",
+      "waitlistPosition" : 2
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  }, {
+    "label" : "cleanup-1",
+    "timestamp" : "2026-11-19T23:19:39.903198400+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 2,
+    "remainingCapacity" : 0,
+    "waitlistOrder" : [ "learner-1042" ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "WAITLISTED",
+      "waitlistPosition" : 1
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  }, {
+    "label" : "cleanup-2",
+    "timestamp" : "2026-11-19T23:19:39.936203100+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 2,
+    "remainingCapacity" : 0,
+    "waitlistOrder" : [ ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  }, {
+    "label" : "cleanup-3",
+    "timestamp" : "2026-11-19T23:19:39.970207+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 1,
+    "remainingCapacity" : 1,
+    "waitlistOrder" : [ ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  }, {
+    "label" : "cleanup-4",
+    "timestamp" : "2026-11-19T23:19:40.001206200+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 0,
+    "remainingCapacity" : 2,
+    "waitlistOrder" : [ ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  }, {
+    "label" : "before",
+    "timestamp" : "2026-11-19T23:19:40.023199700+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 0,
+    "remainingCapacity" : 2,
+    "waitlistOrder" : [ ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  }, {
+    "label" : "after register learner-1001",
+    "timestamp" : "2026-11-19T23:19:40.056216300+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 1,
+    "remainingCapacity" : 1,
+    "waitlistOrder" : [ ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  }, {
+    "label" : "after concurrent requests",
+    "timestamp" : "2026-11-19T23:19:40.157214300+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 2,
+    "remainingCapacity" : 0,
+    "waitlistOrder" : [ ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  }, {
+    "label" : "after",
+    "timestamp" : "2026-11-19T23:19:40.184207300+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 2,
+    "remainingCapacity" : 0,
+    "waitlistOrder" : [ ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "ENROLLED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  } ]
+}

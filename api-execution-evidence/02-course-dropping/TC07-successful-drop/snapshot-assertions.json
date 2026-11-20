@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC07",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Learner dropped and seat released",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}

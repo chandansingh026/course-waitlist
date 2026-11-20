@@ -1,0 +1,626 @@
+{
+  "id" : "TC21",
+  "name" : "Invalid identifiers",
+  "folder" : "05-validation-and-errors/TC21-invalid-identifiers",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requests" : [ {
+    "sequence" : 617,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.297569700+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 618,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.302569600+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 619,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.307566+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 620,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.313569400+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 621,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "before",
+    "step" : "snapshot before learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.319571900+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 622,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "before",
+    "step" : "snapshot before learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.325067200+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 623,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "before",
+    "step" : "snapshot before learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.330079600+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 624,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "before",
+    "step" : "snapshot before learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.334080+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 625,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "scenario",
+    "step" : "surrounding whitespace",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "29"
+    },
+    "body" : "{\"learnerId\":\" learner-1001\"}",
+    "timestamp" : "2026-11-19T23:19:41.339178800+05:30",
+    "expected" : {
+      "httpStatus" : [ 400 ],
+      "responseFields" : {
+        "status" : 400
+      }
+    }
+  }, {
+    "sequence" : 626,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "scenario",
+    "step" : "identifier longer than 100",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "125"
+    },
+    "body" : "{\r\n  \"learnerId\" : \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"\r\n}",
+    "timestamp" : "2026-11-19T23:19:41.345178600+05:30",
+    "expected" : {
+      "httpStatus" : [ 400 ],
+      "responseFields" : {
+        "status" : 400
+      }
+    }
+  }, {
+    "sequence" : 627,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "after",
+    "step" : "snapshot after learner-1001",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.353313200+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 628,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "after",
+    "step" : "snapshot after learner-1002",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.358309900+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 629,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "after",
+    "step" : "snapshot after learner-1003",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.362306+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  }, {
+    "sequence" : 630,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "after",
+    "step" : "snapshot after learner-1042",
+    "method" : "GET",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close"
+    },
+    "body" : null,
+    "timestamp" : "2026-11-19T23:19:41.366312400+05:30",
+    "expected" : {
+      "httpStatus" : [ 200, 404 ],
+      "responseFields" : { }
+    }
+  } ],
+  "responses" : [ {
+    "sequence" : 617,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.300571500+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 618,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.305567900+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 619,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.310574+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 620,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "cleanup",
+    "step" : "snapshot cleanup-0 learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.317574+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 621,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "before",
+    "step" : "snapshot before learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.322567700+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 622,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "before",
+    "step" : "snapshot before learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.327080700+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 623,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "before",
+    "step" : "snapshot before learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.332086200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 624,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "before",
+    "step" : "snapshot before learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.337193+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 625,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "scenario",
+    "step" : "surrounding whitespace",
+    "httpStatus" : 400,
+    "headers" : {
+      "Content-Type" : [ "application/problem+json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"detail\":\"Identifiers must be non-blank, at most 100 characters, and have no surrounding whitespace\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations\",\"status\":400,\"title\":\"Bad Request\",\"type\":\"urn:course-waitlist:invalid\"}",
+    "timestamp" : "2026-11-19T23:19:41.343182700+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 626,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "scenario",
+    "step" : "identifier longer than 100",
+    "httpStatus" : 400,
+    "headers" : {
+      "Content-Type" : [ "application/problem+json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"detail\":\"Invalid request body\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations\",\"status\":400,\"title\":\"Bad Request\",\"type\":\"urn:course-waitlist:invalid\"}",
+    "timestamp" : "2026-11-19T23:19:41.351308200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 627,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "after",
+    "step" : "snapshot after learner-1001",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1001\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.355339400+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 628,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "after",
+    "step" : "snapshot after learner-1002",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.360316200+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 629,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "after",
+    "step" : "snapshot after learner-1003",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.364309800+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }, {
+    "sequence" : 630,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "after",
+    "step" : "snapshot after learner-1042",
+    "httpStatus" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Content-Length" : [ "113" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"DROPPED\",\"waitlistPosition\":null,\"created\":false}",
+    "timestamp" : "2026-11-19T23:19:41.369311300+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  } ],
+  "snapshots" : [ {
+    "label" : "cleanup-0",
+    "timestamp" : "2026-11-19T23:19:41.319571900+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 0,
+    "remainingCapacity" : 2,
+    "waitlistOrder" : [ ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  }, {
+    "label" : "before",
+    "timestamp" : "2026-11-19T23:19:41.339178800+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 0,
+    "remainingCapacity" : 2,
+    "waitlistOrder" : [ ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  }, {
+    "label" : "after",
+    "timestamp" : "2026-11-19T23:19:41.371306100+05:30",
+    "configuredCapacity" : 2,
+    "enrolledCount" : 0,
+    "remainingCapacity" : 2,
+    "waitlistOrder" : [ ],
+    "learners" : [ {
+      "learnerId" : "learner-1001",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1002",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1003",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    }, {
+      "learnerId" : "learner-1042",
+      "status" : "DROPPED",
+      "waitlistPosition" : null
+    } ],
+    "limitation" : "HTTP-observable fixture registrations; not a direct internal-store or database query."
+  } ]
+}

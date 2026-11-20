@@ -1,0 +1,697 @@
+[ {
+  "sequence" : 417,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1001",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.511992500+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 418,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1002",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.523980200+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 419,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1003",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.534978400+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 420,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-0 learner-1042",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.543973900+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 421,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "drop learner-1003",
+  "method" : "DELETE",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1003",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.552971700+05:30",
+  "expected" : {
+    "httpStatus" : [ 200 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 422,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1001",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.559977+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 423,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1002",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.563967900+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 424,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1003",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.570972900+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 425,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-1 learner-1042",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.576967+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 426,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "drop learner-1042",
+  "method" : "DELETE",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1042",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.582985400+05:30",
+  "expected" : {
+    "httpStatus" : [ 200 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 427,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-2 learner-1001",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.588978800+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 428,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-2 learner-1002",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.594969800+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 429,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-2 learner-1003",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.601979+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 430,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "cleanup",
+  "step" : "snapshot cleanup-2 learner-1042",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.607967500+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 431,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "before",
+  "step" : "snapshot before learner-1001",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.615974+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 432,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "before",
+  "step" : "snapshot before learner-1002",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.622985700+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 433,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "before",
+  "step" : "snapshot before learner-1003",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.629971500+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 434,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "before",
+  "step" : "snapshot before learner-1042",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.636969800+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 435,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "register learner-1001",
+  "method" : "POST",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close",
+    "Content-Type" : "application/json; charset=utf-8",
+    "Content-Length" : "36"
+  },
+  "body" : "{\r\n  \"learnerId\" : \"learner-1001\"\r\n}",
+  "timestamp" : "2026-11-19T23:19:39.643982500+05:30",
+  "expected" : {
+    "httpStatus" : [ 201 ],
+    "responseFields" : {
+      "status" : "ENROLLED"
+    }
+  }
+}, {
+  "sequence" : 436,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1001",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.652973300+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 437,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1002",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.703479300+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 438,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1003",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.713831100+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 439,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "snapshot after register learner-1001 learner-1042",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.727833100+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 440,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "concurrent request 1",
+  "method" : "POST",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close",
+    "Content-Type" : "application/json; charset=utf-8",
+    "Content-Length" : "28"
+  },
+  "body" : "{\"learnerId\":\"learner-1002\"}",
+  "timestamp" : "2026-11-19T23:19:39.746211500+05:30",
+  "expected" : {
+    "httpStatus" : [ 201 ],
+    "responseFields" : {
+      "created" : true
+    }
+  }
+}, {
+  "sequence" : 441,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "concurrent request 2",
+  "method" : "POST",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close",
+    "Content-Type" : "application/json; charset=utf-8",
+    "Content-Length" : "28"
+  },
+  "body" : "{\"learnerId\":\"learner-1003\"}",
+  "timestamp" : "2026-11-19T23:19:39.746211500+05:30",
+  "expected" : {
+    "httpStatus" : [ 201 ],
+    "responseFields" : {
+      "created" : true
+    }
+  }
+}, {
+  "sequence" : 442,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "concurrent request 3",
+  "method" : "POST",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close",
+    "Content-Type" : "application/json; charset=utf-8",
+    "Content-Length" : "28"
+  },
+  "body" : "{\"learnerId\":\"learner-1042\"}",
+  "timestamp" : "2026-11-19T23:19:39.746211500+05:30",
+  "expected" : {
+    "httpStatus" : [ 201 ],
+    "responseFields" : {
+      "created" : true
+    }
+  }
+}, {
+  "sequence" : 443,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "snapshot after concurrent requests learner-1001",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.776202500+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 444,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "snapshot after concurrent requests learner-1002",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.783203+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 445,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "snapshot after concurrent requests learner-1003",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.791204500+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 446,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "scenario",
+  "step" : "snapshot after concurrent requests learner-1042",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.798202300+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 447,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "after",
+  "step" : "snapshot after learner-1001",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.811207900+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 448,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "after",
+  "step" : "snapshot after learner-1002",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.818202+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 449,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "after",
+  "step" : "snapshot after learner-1003",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.825202300+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+}, {
+  "sequence" : 450,
+  "testCaseId" : "TC15",
+  "scenario" : "Simultaneous enrollment for final seat",
+  "phase" : "after",
+  "step" : "snapshot after learner-1042",
+  "method" : "GET",
+  "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042",
+  "headers" : {
+    "Host" : "127.0.0.1:8080",
+    "Accept" : "application/json, application/problem+json",
+    "User-Agent" : "course-waitlist-live-evidence/1.0",
+    "Connection" : "close"
+  },
+  "body" : null,
+  "timestamp" : "2026-11-19T23:19:39.831199+05:30",
+  "expected" : {
+    "httpStatus" : [ 200, 404 ],
+    "responseFields" : { }
+  }
+} ]

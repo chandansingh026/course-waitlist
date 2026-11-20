@@ -1,0 +1,19 @@
+[ {
+  "sequence" : 598,
+  "testCaseId" : "TC19",
+  "scenario" : "Missing mandatory fields",
+  "phase" : "scenario",
+  "step" : "missing learner ID",
+  "httpStatus" : 400,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Invalid request body\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations\",\"status\":400,\"title\":\"Bad Request\",\"type\":\"urn:course-waitlist:invalid\"}",
+  "timestamp" : "2026-11-19T23:19:41.130188500+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+} ]

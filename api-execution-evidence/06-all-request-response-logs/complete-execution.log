@@ -1,0 +1,687 @@
+2026-11-19T23:19:34.561752600+05:30 BEGIN TC01 Successful enrollment
+2026-11-19T23:19:35.037696500+05:30 TC01 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 404 PASS
+2026-11-19T23:19:35.054690600+05:30 TC01 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 404 PASS
+2026-11-19T23:19:35.097218+05:30 TC01 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 404 PASS
+2026-11-19T23:19:35.110270200+05:30 TC01 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:35.128430300+05:30 TC01 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 404 PASS
+2026-11-19T23:19:35.138449+05:30 TC01 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 404 PASS
+2026-11-19T23:19:35.149430100+05:30 TC01 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 404 PASS
+2026-11-19T23:19:35.161835700+05:30 TC01 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:35.359107200+05:30 TC01 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:35.367110300+05:30 TC01 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:35.374108300+05:30 TC01 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 404 PASS
+2026-11-19T23:19:35.382105800+05:30 TC01 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 404 PASS
+2026-11-19T23:19:35.390110600+05:30 TC01 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:35.397249100+05:30 TC01 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:35.403563900+05:30 TC01 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 404 PASS
+2026-11-19T23:19:35.409571200+05:30 TC01 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 404 PASS
+2026-11-19T23:19:35.416878600+05:30 TC01 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:35.556063500+05:30 END TC01 PASS
+2026-11-19T23:19:35.558063700+05:30 BEGIN TC02 Course full waitlist
+2026-11-19T23:19:35.568062400+05:30 TC02 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:35.576064400+05:30 TC02 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 404 PASS
+2026-11-19T23:19:35.625461900+05:30 TC02 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 404 PASS
+2026-11-19T23:19:35.637456500+05:30 TC02 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:35.659447+05:30 TC02 cleanup drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:35.676452800+05:30 TC02 cleanup snapshot cleanup-1 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:35.688451900+05:30 TC02 cleanup snapshot cleanup-1 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 404 PASS
+2026-11-19T23:19:35.697474800+05:30 TC02 cleanup snapshot cleanup-1 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 404 PASS
+2026-11-19T23:19:35.707444400+05:30 TC02 cleanup snapshot cleanup-1 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:35.718445100+05:30 TC02 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:35.728451700+05:30 TC02 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 404 PASS
+2026-11-19T23:19:35.739450100+05:30 TC02 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 404 PASS
+2026-11-19T23:19:35.751450100+05:30 TC02 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:35.764444300+05:30 TC02 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:35.777450+05:30 TC02 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:35.790458600+05:30 TC02 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 404 PASS
+2026-11-19T23:19:35.800447100+05:30 TC02 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 404 PASS
+2026-11-19T23:19:35.810518600+05:30 TC02 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:35.821444300+05:30 TC02 scenario register learner-1002 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:35.872335300+05:30 TC02 scenario snapshot after register learner-1002 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:35.882339700+05:30 TC02 scenario snapshot after register learner-1002 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:35.893337700+05:30 TC02 scenario snapshot after register learner-1002 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 404 PASS
+2026-11-19T23:19:35.907332800+05:30 TC02 scenario snapshot after register learner-1002 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:35.923340100+05:30 TC02 scenario register learner-1003 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:35.935355+05:30 TC02 scenario snapshot after register learner-1003 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:35.951758300+05:30 TC02 scenario snapshot after register learner-1003 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:35.962304600+05:30 TC02 scenario snapshot after register learner-1003 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:35.972312600+05:30 TC02 scenario snapshot after register learner-1003 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:35.987901400+05:30 TC02 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:35.996893500+05:30 TC02 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.005891800+05:30 TC02 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.018902900+05:30 TC02 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.034899700+05:30 END TC02 PASS
+2026-11-19T23:19:36.036895200+05:30 BEGIN TC03 Duplicate enrollment and waitlisting
+2026-11-19T23:19:36.043898500+05:30 TC03 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.052892500+05:30 TC03 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.060895500+05:30 TC03 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.067891500+05:30 TC03 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.075897800+05:30 TC03 cleanup drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.083896100+05:30 TC03 cleanup snapshot cleanup-1 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.090902+05:30 TC03 cleanup snapshot cleanup-1 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.097892300+05:30 TC03 cleanup snapshot cleanup-1 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.104900800+05:30 TC03 cleanup snapshot cleanup-1 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.112903+05:30 TC03 cleanup drop learner-1002 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.122901300+05:30 TC03 cleanup snapshot cleanup-2 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.130893700+05:30 TC03 cleanup snapshot cleanup-2 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.137901800+05:30 TC03 cleanup snapshot cleanup-2 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.147899700+05:30 TC03 cleanup snapshot cleanup-2 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.158893900+05:30 TC03 cleanup drop learner-1003 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.165901900+05:30 TC03 cleanup snapshot cleanup-3 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.174891500+05:30 TC03 cleanup snapshot cleanup-3 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.182899800+05:30 TC03 cleanup snapshot cleanup-3 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.192895100+05:30 TC03 cleanup snapshot cleanup-3 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.240577900+05:30 TC03 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.249582900+05:30 TC03 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.259579500+05:30 TC03 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.270631200+05:30 TC03 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.284600900+05:30 TC03 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:36.295583500+05:30 TC03 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.306591700+05:30 TC03 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.317581300+05:30 TC03 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.328580700+05:30 TC03 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.339584200+05:30 TC03 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 200 PASS
+2026-11-19T23:19:36.390823700+05:30 TC03 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.396827600+05:30 TC03 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.402828200+05:30 TC03 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.408831800+05:30 TC03 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.416870300+05:30 TC03 scenario register learner-1002 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:36.423822800+05:30 TC03 scenario snapshot after register learner-1002 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.429916500+05:30 TC03 scenario snapshot after register learner-1002 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.435830300+05:30 TC03 scenario snapshot after register learner-1002 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.442823900+05:30 TC03 scenario snapshot after register learner-1002 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.450875+05:30 TC03 scenario register learner-1003 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:36.462865300+05:30 TC03 scenario snapshot after register learner-1003 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.471840300+05:30 TC03 scenario snapshot after register learner-1003 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.480835700+05:30 TC03 scenario snapshot after register learner-1003 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.490829+05:30 TC03 scenario snapshot after register learner-1003 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.501829800+05:30 TC03 scenario register learner-1003 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 200 PASS
+2026-11-19T23:19:36.510822400+05:30 TC03 scenario snapshot after register learner-1003 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.519831400+05:30 TC03 scenario snapshot after register learner-1003 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.531324100+05:30 TC03 scenario snapshot after register learner-1003 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.541333400+05:30 TC03 scenario snapshot after register learner-1003 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.550323900+05:30 TC03 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.565318300+05:30 TC03 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.575333500+05:30 TC03 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.587319600+05:30 TC03 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.609327800+05:30 END TC03 PASS
+2026-11-19T23:19:36.611315700+05:30 BEGIN TC04 Ineligible learner
+2026-11-19T23:19:36.623320700+05:30 TC04 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.633317800+05:30 TC04 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.648320300+05:30 TC04 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.662317800+05:30 TC04 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.672321600+05:30 TC04 cleanup drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.688325+05:30 TC04 cleanup snapshot cleanup-1 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.706323400+05:30 TC04 cleanup snapshot cleanup-1 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.716323100+05:30 TC04 cleanup snapshot cleanup-1 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.726312800+05:30 TC04 cleanup snapshot cleanup-1 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.735313200+05:30 TC04 cleanup drop learner-1002 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.744309900+05:30 TC04 cleanup snapshot cleanup-2 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.754328500+05:30 TC04 cleanup snapshot cleanup-2 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.764317200+05:30 TC04 cleanup snapshot cleanup-2 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.771313+05:30 TC04 cleanup snapshot cleanup-2 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.780316400+05:30 TC04 cleanup drop learner-1003 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.787320700+05:30 TC04 cleanup snapshot cleanup-3 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.794315300+05:30 TC04 cleanup snapshot cleanup-3 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.801312100+05:30 TC04 cleanup snapshot cleanup-3 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.807312800+05:30 TC04 cleanup snapshot cleanup-3 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.853691500+05:30 TC04 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.861684300+05:30 TC04 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.870747300+05:30 TC04 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.879686800+05:30 TC04 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.891693400+05:30 TC04 scenario register not-eligible POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 422 PASS
+2026-11-19T23:19:36.901938800+05:30 TC04 scenario snapshot after register not-eligible learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.912135100+05:30 TC04 scenario snapshot after register not-eligible learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.923135700+05:30 TC04 scenario snapshot after register not-eligible learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.932136300+05:30 TC04 scenario snapshot after register not-eligible learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.941145600+05:30 TC04 scenario lookup rejected learner GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/not-eligible -> 404 PASS
+2026-11-19T23:19:36.953489200+05:30 TC04 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.960539900+05:30 TC04 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:36.968492800+05:30 TC04 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:36.975551900+05:30 TC04 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:36.982571800+05:30 END TC04 PASS
+2026-11-19T23:19:36.983573700+05:30 BEGIN TC05 Unknown offering
+2026-11-19T23:19:36.990412100+05:30 TC05 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:36.996410700+05:30 TC05 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.003412900+05:30 TC05 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.013929+05:30 TC05 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.023929800+05:30 TC05 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.033927100+05:30 TC05 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.042925400+05:30 TC05 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.052933600+05:30 TC05 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.064060500+05:30 TC05 scenario unknown offering POST http://127.0.0.1:8080/api/v1/offerings/unknown/registrations -> 404 PASS
+2026-11-19T23:19:37.075422100+05:30 TC05 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.086432500+05:30 TC05 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.094290300+05:30 TC05 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.101570+05:30 TC05 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.114012+05:30 END TC05 PASS
+2026-11-19T23:19:37.116487200+05:30 BEGIN TC06 Invalid learner ID
+2026-11-19T23:19:37.122510100+05:30 TC06 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.128512500+05:30 TC06 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.136513+05:30 TC06 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.143514700+05:30 TC06 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.149510800+05:30 TC06 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.156510600+05:30 TC06 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.162517700+05:30 TC06 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.171513500+05:30 TC06 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.218603+05:30 TC06 scenario blank learner POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 400 PASS
+2026-11-19T23:19:37.227600600+05:30 TC06 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.234604400+05:30 TC06 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.241612900+05:30 TC06 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.248595600+05:30 TC06 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.301157300+05:30 END TC06 PASS
+2026-11-19T23:19:37.303131500+05:30 BEGIN TC07 Successful drop
+2026-11-19T23:19:37.312128400+05:30 TC07 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.322137100+05:30 TC07 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.333128400+05:30 TC07 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.343137100+05:30 TC07 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.361211300+05:30 TC07 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.371233+05:30 TC07 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.380220200+05:30 TC07 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.390206400+05:30 TC07 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.398213700+05:30 TC07 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:37.404208100+05:30 TC07 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.411217400+05:30 TC07 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.418207100+05:30 TC07 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.424212+05:30 TC07 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.430231400+05:30 TC07 scenario drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.436216600+05:30 TC07 scenario snapshot after drop learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.441208300+05:30 TC07 scenario snapshot after drop learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.448208800+05:30 TC07 scenario snapshot after drop learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.454218200+05:30 TC07 scenario snapshot after drop learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.463219700+05:30 TC07 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.473512800+05:30 TC07 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.482504300+05:30 TC07 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.492509900+05:30 TC07 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.503509600+05:30 END TC07 PASS
+2026-11-19T23:19:37.505507300+05:30 BEGIN TC08 Drop when not enrolled
+2026-11-19T23:19:37.513506800+05:30 TC08 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.520503200+05:30 TC08 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.526500900+05:30 TC08 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.531506900+05:30 TC08 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.536508+05:30 TC08 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.542504500+05:30 TC08 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.548499500+05:30 TC08 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.554520100+05:30 TC08 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.560511300+05:30 TC08 scenario drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 409 PASS
+2026-11-19T23:19:37.566505200+05:30 TC08 scenario snapshot after drop learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.574539+05:30 TC08 scenario snapshot after drop learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.580506800+05:30 TC08 scenario snapshot after drop learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.586509+05:30 TC08 scenario snapshot after drop learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.592507500+05:30 TC08 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.597510200+05:30 TC08 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.604504100+05:30 TC08 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.611536200+05:30 TC08 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.619500800+05:30 END TC08 PASS
+2026-11-19T23:19:37.620501400+05:30 BEGIN TC09 Repeated drop
+2026-11-19T23:19:37.625543500+05:30 TC09 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.630519300+05:30 TC09 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.636507200+05:30 TC09 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.641502700+05:30 TC09 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.647501+05:30 TC09 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.656507+05:30 TC09 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.667500+05:30 TC09 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.675503200+05:30 TC09 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.683501300+05:30 TC09 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:37.688499800+05:30 TC09 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.695521600+05:30 TC09 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.700499700+05:30 TC09 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.706510+05:30 TC09 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.714511300+05:30 TC09 scenario drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.724509800+05:30 TC09 scenario snapshot after drop learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.735522700+05:30 TC09 scenario snapshot after drop learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.742499700+05:30 TC09 scenario snapshot after drop learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.748502200+05:30 TC09 scenario snapshot after drop learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.754506500+05:30 TC09 scenario drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 409 PASS
+2026-11-19T23:19:37.797980600+05:30 TC09 scenario snapshot after drop learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.804004900+05:30 TC09 scenario snapshot after drop learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.809001100+05:30 TC09 scenario snapshot after drop learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.814996300+05:30 TC09 scenario snapshot after drop learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.819998700+05:30 TC09 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.824995200+05:30 TC09 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.830004500+05:30 TC09 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.834997800+05:30 TC09 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.845996300+05:30 END TC09 PASS
+2026-11-19T23:19:37.846995600+05:30 BEGIN TC10 Drop with empty waitlist
+2026-11-19T23:19:37.853016600+05:30 TC10 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.858003500+05:30 TC10 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.863003400+05:30 TC10 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.869004400+05:30 TC10 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.873996+05:30 TC10 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.878007600+05:30 TC10 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.884024400+05:30 TC10 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.889005500+05:30 TC10 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.895995700+05:30 TC10 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:37.901995500+05:30 TC10 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.906002200+05:30 TC10 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.912001100+05:30 TC10 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.918998800+05:30 TC10 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.925996500+05:30 TC10 scenario register learner-1002 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:37.932998400+05:30 TC10 scenario snapshot after register learner-1002 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.939997700+05:30 TC10 scenario snapshot after register learner-1002 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.949001200+05:30 TC10 scenario snapshot after register learner-1002 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:37.958995800+05:30 TC10 scenario snapshot after register learner-1002 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:37.969048900+05:30 TC10 scenario drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.981580600+05:30 TC10 scenario snapshot after drop learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:37.986580+05:30 TC10 scenario snapshot after drop learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:37.993578600+05:30 TC10 scenario snapshot after drop learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.000581700+05:30 TC10 scenario snapshot after drop learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:38.007602300+05:30 TC10 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.018590500+05:30 TC10 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.029587800+05:30 TC10 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.039598100+05:30 TC10 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:38.072587600+05:30 END TC10 PASS
+2026-11-19T23:19:38.076593+05:30 BEGIN TC11 FIFO promotion
+2026-11-19T23:19:38.143599100+05:30 TC11 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.161590400+05:30 TC11 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.183589800+05:30 TC11 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.200581500+05:30 TC11 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:38.209576700+05:30 TC11 cleanup drop learner-1002 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.215577200+05:30 TC11 cleanup snapshot cleanup-1 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.223581100+05:30 TC11 cleanup snapshot cleanup-1 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.229583400+05:30 TC11 cleanup snapshot cleanup-1 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.237579300+05:30 TC11 cleanup snapshot cleanup-1 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:38.243579+05:30 TC11 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.248579600+05:30 TC11 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.253588+05:30 TC11 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.258591300+05:30 TC11 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:38.267605800+05:30 TC11 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:38.273584500+05:30 TC11 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.282586700+05:30 TC11 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.292693700+05:30 TC11 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.338732400+05:30 TC11 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:38.350732100+05:30 TC11 scenario register learner-1002 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:38.361747900+05:30 TC11 scenario snapshot after register learner-1002 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.371737600+05:30 TC11 scenario snapshot after register learner-1002 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.378733200+05:30 TC11 scenario snapshot after register learner-1002 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.390731200+05:30 TC11 scenario snapshot after register learner-1002 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:38.400738800+05:30 TC11 scenario register learner-1003 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:38.406739600+05:30 TC11 scenario snapshot after register learner-1003 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.412738500+05:30 TC11 scenario snapshot after register learner-1003 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.419745300+05:30 TC11 scenario snapshot after register learner-1003 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.424740400+05:30 TC11 scenario snapshot after register learner-1003 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 404 PASS
+2026-11-19T23:19:38.433957100+05:30 TC11 scenario register learner-1042 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:38.438956800+05:30 TC11 scenario snapshot after register learner-1042 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.443989400+05:30 TC11 scenario snapshot after register learner-1042 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.449953700+05:30 TC11 scenario snapshot after register learner-1042 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.454954300+05:30 TC11 scenario snapshot after register learner-1042 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.460957700+05:30 TC11 scenario snapshot queue-before-drop learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.467955+05:30 TC11 scenario snapshot queue-before-drop learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.473952400+05:30 TC11 scenario snapshot queue-before-drop learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.479990100+05:30 TC11 scenario snapshot queue-before-drop learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.485951700+05:30 TC11 scenario drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.490957100+05:30 TC11 scenario snapshot after drop learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.496966500+05:30 TC11 scenario snapshot after drop learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.500961300+05:30 TC11 scenario snapshot after drop learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.506954800+05:30 TC11 scenario snapshot after drop learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.512956800+05:30 TC11 scenario snapshot first-promotion learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.518957500+05:30 TC11 scenario snapshot first-promotion learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.525961300+05:30 TC11 scenario snapshot first-promotion learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.530964900+05:30 TC11 scenario snapshot first-promotion learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.535961900+05:30 TC11 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.540952300+05:30 TC11 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.545954500+05:30 TC11 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.551956200+05:30 TC11 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.562973600+05:30 END TC11 PASS
+2026-11-19T23:19:38.571957200+05:30 END TC12 NOT EXECUTED: The running application uses an immutable eligibility fixture and exposes no API to change eligibility after waitlisting. No mock or business-logic change was used.
+2026-11-19T23:19:38.572958200+05:30 BEGIN TC13 Multiple waitlisted learners
+2026-11-19T23:19:38.579953300+05:30 TC13 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.585282400+05:30 TC13 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.591299700+05:30 TC13 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.596296900+05:30 TC13 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.601296100+05:30 TC13 cleanup drop learner-1002 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.606294600+05:30 TC13 cleanup snapshot cleanup-1 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.611297300+05:30 TC13 cleanup snapshot cleanup-1 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.617293200+05:30 TC13 cleanup snapshot cleanup-1 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.622326800+05:30 TC13 cleanup snapshot cleanup-1 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.627297600+05:30 TC13 cleanup drop learner-1003 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.632323500+05:30 TC13 cleanup snapshot cleanup-2 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.638327300+05:30 TC13 cleanup snapshot cleanup-2 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.644302+05:30 TC13 cleanup snapshot cleanup-2 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.649315800+05:30 TC13 cleanup snapshot cleanup-2 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.657297500+05:30 TC13 cleanup drop learner-1042 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.663296300+05:30 TC13 cleanup snapshot cleanup-3 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.672304600+05:30 TC13 cleanup snapshot cleanup-3 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.684305100+05:30 TC13 cleanup snapshot cleanup-3 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.694304+05:30 TC13 cleanup snapshot cleanup-3 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.743119400+05:30 TC13 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.759116800+05:30 TC13 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.770116+05:30 TC13 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.779111500+05:30 TC13 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.792111500+05:30 TC13 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:38.803110700+05:30 TC13 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.813109300+05:30 TC13 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.825106500+05:30 TC13 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.830715300+05:30 TC13 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.838613600+05:30 TC13 scenario register learner-1002 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:38.844621200+05:30 TC13 scenario snapshot after register learner-1002 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.853614600+05:30 TC13 scenario snapshot after register learner-1002 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.859614500+05:30 TC13 scenario snapshot after register learner-1002 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.866615200+05:30 TC13 scenario snapshot after register learner-1002 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.876623900+05:30 TC13 scenario register learner-1003 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:38.883615200+05:30 TC13 scenario snapshot after register learner-1003 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.890619800+05:30 TC13 scenario snapshot after register learner-1003 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.898616400+05:30 TC13 scenario snapshot after register learner-1003 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.906627800+05:30 TC13 scenario snapshot after register learner-1003 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.916617+05:30 TC13 scenario register learner-1042 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:38.929622800+05:30 TC13 scenario snapshot after register learner-1042 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.939626+05:30 TC13 scenario snapshot after register learner-1042 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.948620400+05:30 TC13 scenario snapshot after register learner-1042 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.957197900+05:30 TC13 scenario snapshot after register learner-1042 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.966096900+05:30 TC13 scenario snapshot multiple-waiters learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:38.975931400+05:30 TC13 scenario snapshot multiple-waiters learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:38.984875200+05:30 TC13 scenario snapshot multiple-waiters learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:38.990876600+05:30 TC13 scenario snapshot multiple-waiters learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:38.995876600+05:30 TC13 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.000878200+05:30 TC13 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.009874600+05:30 TC13 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.017875300+05:30 TC13 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.030891900+05:30 END TC13 PASS
+2026-11-19T23:19:39.032888+05:30 BEGIN TC14 Multiple sequential promotions
+2026-11-19T23:19:39.040879100+05:30 TC14 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.048873500+05:30 TC14 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.053989800+05:30 TC14 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.058872200+05:30 TC14 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.063872200+05:30 TC14 cleanup drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.068973800+05:30 TC14 cleanup snapshot cleanup-1 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.073875300+05:30 TC14 cleanup snapshot cleanup-1 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.077875100+05:30 TC14 cleanup snapshot cleanup-1 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.083878800+05:30 TC14 cleanup snapshot cleanup-1 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.089873300+05:30 TC14 cleanup drop learner-1002 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.094875100+05:30 TC14 cleanup snapshot cleanup-2 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.099887+05:30 TC14 cleanup snapshot cleanup-2 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.104971400+05:30 TC14 cleanup snapshot cleanup-2 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.110877200+05:30 TC14 cleanup snapshot cleanup-2 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.117975200+05:30 TC14 cleanup drop learner-1003 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.123877900+05:30 TC14 cleanup snapshot cleanup-3 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.130877400+05:30 TC14 cleanup snapshot cleanup-3 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.136979800+05:30 TC14 cleanup snapshot cleanup-3 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.145877600+05:30 TC14 cleanup snapshot cleanup-3 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.157940300+05:30 TC14 cleanup drop learner-1042 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.165975200+05:30 TC14 cleanup snapshot cleanup-4 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.172882+05:30 TC14 cleanup snapshot cleanup-4 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.180885800+05:30 TC14 cleanup snapshot cleanup-4 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.190880400+05:30 TC14 cleanup snapshot cleanup-4 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.201882500+05:30 TC14 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.209876+05:30 TC14 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.215874900+05:30 TC14 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.223313600+05:30 TC14 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.229307400+05:30 TC14 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:39.238306500+05:30 TC14 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.244369+05:30 TC14 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.249323400+05:30 TC14 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.254308600+05:30 TC14 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.262309+05:30 TC14 scenario register learner-1002 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:39.268311400+05:30 TC14 scenario snapshot after register learner-1002 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.274315200+05:30 TC14 scenario snapshot after register learner-1002 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.282317100+05:30 TC14 scenario snapshot after register learner-1002 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.289416500+05:30 TC14 scenario snapshot after register learner-1002 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.298416700+05:30 TC14 scenario register learner-1003 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:39.309377900+05:30 TC14 scenario snapshot after register learner-1003 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.317503+05:30 TC14 scenario snapshot after register learner-1003 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.325506600+05:30 TC14 scenario snapshot after register learner-1003 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.332498900+05:30 TC14 scenario snapshot after register learner-1003 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.340602300+05:30 TC14 scenario register learner-1042 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:39.348501+05:30 TC14 scenario snapshot after register learner-1042 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.355499700+05:30 TC14 scenario snapshot after register learner-1042 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.362504300+05:30 TC14 scenario snapshot after register learner-1042 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.370499500+05:30 TC14 scenario snapshot after register learner-1042 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.379506500+05:30 TC14 scenario drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.390982800+05:30 TC14 scenario snapshot after drop learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.399973100+05:30 TC14 scenario snapshot after drop learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.406975800+05:30 TC14 scenario snapshot after drop learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.413973700+05:30 TC14 scenario snapshot after drop learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.422976400+05:30 TC14 scenario drop learner-1002 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.432974400+05:30 TC14 scenario snapshot after drop learner-1002 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.440971100+05:30 TC14 scenario snapshot after drop learner-1002 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.450982100+05:30 TC14 scenario snapshot after drop learner-1002 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.459969200+05:30 TC14 scenario snapshot after drop learner-1002 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.466967300+05:30 TC14 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.478974200+05:30 TC14 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.487972200+05:30 TC14 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.495978900+05:30 TC14 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.508969300+05:30 END TC14 PASS
+2026-11-19T23:19:39.510973700+05:30 BEGIN TC15 Simultaneous enrollment for final seat
+2026-11-19T23:19:39.522978400+05:30 TC15 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.533983400+05:30 TC15 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.542977600+05:30 TC15 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.551975200+05:30 TC15 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.558976900+05:30 TC15 cleanup drop learner-1003 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.562980300+05:30 TC15 cleanup snapshot cleanup-1 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.569970200+05:30 TC15 cleanup snapshot cleanup-1 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.575967500+05:30 TC15 cleanup snapshot cleanup-1 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.581967800+05:30 TC15 cleanup snapshot cleanup-1 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.588978800+05:30 TC15 cleanup drop learner-1042 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.594969800+05:30 TC15 cleanup snapshot cleanup-2 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.600969700+05:30 TC15 cleanup snapshot cleanup-2 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.606984700+05:30 TC15 cleanup snapshot cleanup-2 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.614970800+05:30 TC15 cleanup snapshot cleanup-2 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.621976+05:30 TC15 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.628968100+05:30 TC15 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.635969200+05:30 TC15 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.642968600+05:30 TC15 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.651975900+05:30 TC15 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:39.701479800+05:30 TC15 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.712830400+05:30 TC15 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.725825300+05:30 TC15 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.735832100+05:30 TC15 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.758199800+05:30 TC15 scenario concurrent request 1 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:39.762204500+05:30 TC15 scenario concurrent request 2 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:39.765209600+05:30 TC15 scenario concurrent request 3 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:39.782200200+05:30 TC15 scenario snapshot after concurrent requests learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.790206200+05:30 TC15 scenario snapshot after concurrent requests learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.797202200+05:30 TC15 scenario snapshot after concurrent requests learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.807203+05:30 TC15 scenario snapshot after concurrent requests learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.817203100+05:30 TC15 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.824204200+05:30 TC15 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.830210100+05:30 TC15 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.836205200+05:30 TC15 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.844201200+05:30 END TC15 PASS
+2026-11-19T23:19:39.845200400+05:30 BEGIN TC16 Duplicate concurrent enrollment
+2026-11-19T23:19:39.851203300+05:30 TC16 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.857203+05:30 TC16 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.863202800+05:30 TC16 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.869212800+05:30 TC16 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.878204+05:30 TC16 cleanup drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.885205400+05:30 TC16 cleanup snapshot cleanup-1 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.891199500+05:30 TC16 cleanup snapshot cleanup-1 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.897200200+05:30 TC16 cleanup snapshot cleanup-1 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.902212900+05:30 TC16 cleanup snapshot cleanup-1 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.909238600+05:30 TC16 cleanup drop learner-1002 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.915203700+05:30 TC16 cleanup snapshot cleanup-2 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.922201700+05:30 TC16 cleanup snapshot cleanup-2 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.928204400+05:30 TC16 cleanup snapshot cleanup-2 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.935203400+05:30 TC16 cleanup snapshot cleanup-2 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.943201100+05:30 TC16 cleanup drop learner-1003 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.950202900+05:30 TC16 cleanup snapshot cleanup-3 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.956225+05:30 TC16 cleanup snapshot cleanup-3 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.963200100+05:30 TC16 cleanup snapshot cleanup-3 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:39.969206200+05:30 TC16 cleanup snapshot cleanup-3 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.979199500+05:30 TC16 cleanup drop learner-1042 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1042 -> 200 PASS
+2026-11-19T23:19:39.985202400+05:30 TC16 cleanup snapshot cleanup-4 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:39.990210400+05:30 TC16 cleanup snapshot cleanup-4 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:39.996202200+05:30 TC16 cleanup snapshot cleanup-4 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.000204500+05:30 TC16 cleanup snapshot cleanup-4 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.006200600+05:30 TC16 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.013202500+05:30 TC16 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.018203+05:30 TC16 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.023199700+05:30 TC16 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.034213900+05:30 TC16 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:40.040215+05:30 TC16 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.045197500+05:30 TC16 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.050201+05:30 TC16 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.055213700+05:30 TC16 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.069211100+05:30 TC16 scenario concurrent request 1 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:40.071202300+05:30 TC16 scenario concurrent request 2 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 200 PASS
+2026-11-19T23:19:40.080205+05:30 TC16 scenario concurrent request 3 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 200 PASS
+2026-11-19T23:19:40.086208900+05:30 TC16 scenario concurrent request 4 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 200 PASS
+2026-11-19T23:19:40.093256300+05:30 TC16 scenario concurrent request 5 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 200 PASS
+2026-11-19T23:19:40.097202700+05:30 TC16 scenario concurrent request 6 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 200 PASS
+2026-11-19T23:19:40.101214700+05:30 TC16 scenario concurrent request 7 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 200 PASS
+2026-11-19T23:19:40.105210200+05:30 TC16 scenario concurrent request 8 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 200 PASS
+2026-11-19T23:19:40.137207500+05:30 TC16 scenario snapshot after concurrent requests learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.144202900+05:30 TC16 scenario snapshot after concurrent requests learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.152199+05:30 TC16 scenario snapshot after concurrent requests learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.156233100+05:30 TC16 scenario snapshot after concurrent requests learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.164214900+05:30 TC16 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.169211400+05:30 TC16 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.175205700+05:30 TC16 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.183204900+05:30 TC16 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.197216700+05:30 END TC16 PASS
+2026-11-19T23:19:40.200214100+05:30 BEGIN TC17 Simultaneous drops
+2026-11-19T23:19:40.207314+05:30 TC17 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.216512700+05:30 TC17 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.226569500+05:30 TC17 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.235591600+05:30 TC17 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.246595500+05:30 TC17 cleanup drop learner-1001 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.255587600+05:30 TC17 cleanup snapshot cleanup-1 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.264595400+05:30 TC17 cleanup snapshot cleanup-1 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.273597100+05:30 TC17 cleanup snapshot cleanup-1 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.282590+05:30 TC17 cleanup snapshot cleanup-1 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.291595500+05:30 TC17 cleanup drop learner-1002 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.301586500+05:30 TC17 cleanup snapshot cleanup-2 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.309598200+05:30 TC17 cleanup snapshot cleanup-2 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.326600200+05:30 TC17 cleanup snapshot cleanup-2 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.335585300+05:30 TC17 cleanup snapshot cleanup-2 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.345584+05:30 TC17 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.353586+05:30 TC17 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.360596400+05:30 TC17 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.367595800+05:30 TC17 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.376604800+05:30 TC17 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:40.423755+05:30 TC17 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.431488500+05:30 TC17 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.439480700+05:30 TC17 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.447477500+05:30 TC17 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.457473500+05:30 TC17 scenario register learner-1002 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:40.465486300+05:30 TC17 scenario snapshot after register learner-1002 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.474475500+05:30 TC17 scenario snapshot after register learner-1002 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.482608400+05:30 TC17 scenario snapshot after register learner-1002 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.490615100+05:30 TC17 scenario snapshot after register learner-1002 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.500614500+05:30 TC17 scenario concurrent request 1 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.507086900+05:30 TC17 scenario concurrent request 2 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.515164800+05:30 TC17 scenario snapshot after concurrent requests learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.523143500+05:30 TC17 scenario snapshot after concurrent requests learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.531218500+05:30 TC17 scenario snapshot after concurrent requests learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.538223400+05:30 TC17 scenario snapshot after concurrent requests learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.545231700+05:30 TC17 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.553746100+05:30 TC17 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.560739400+05:30 TC17 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.569059700+05:30 TC17 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.584853200+05:30 END TC17 PASS
+2026-11-19T23:19:40.586854300+05:30 BEGIN TC18 Concurrent promotion opportunities
+2026-11-19T23:19:40.594852800+05:30 TC18 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.602868300+05:30 TC18 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.610861100+05:30 TC18 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.618412+05:30 TC18 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.626373900+05:30 TC18 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.634624+05:30 TC18 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.642613400+05:30 TC18 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.650613400+05:30 TC18 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.660957800+05:30 TC18 scenario register learner-1001 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:40.669104100+05:30 TC18 scenario snapshot after register learner-1001 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.677103900+05:30 TC18 scenario snapshot after register learner-1001 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.689108300+05:30 TC18 scenario snapshot after register learner-1001 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.698121400+05:30 TC18 scenario snapshot after register learner-1001 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.708347400+05:30 TC18 scenario register learner-1002 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:40.715355700+05:30 TC18 scenario snapshot after register learner-1002 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.724350300+05:30 TC18 scenario snapshot after register learner-1002 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.736402800+05:30 TC18 scenario snapshot after register learner-1002 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.747367300+05:30 TC18 scenario snapshot after register learner-1002 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.759349300+05:30 TC18 scenario register learner-1003 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:40.781035300+05:30 TC18 scenario snapshot after register learner-1003 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.790041100+05:30 TC18 scenario snapshot after register learner-1003 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.798037500+05:30 TC18 scenario snapshot after register learner-1003 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.805024700+05:30 TC18 scenario snapshot after register learner-1003 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.816028300+05:30 TC18 scenario register learner-1042 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 201 PASS
+2026-11-19T23:19:40.825023+05:30 TC18 scenario snapshot after register learner-1042 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.833021300+05:30 TC18 scenario snapshot after register learner-1042 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.842027500+05:30 TC18 scenario snapshot after register learner-1042 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.849025200+05:30 TC18 scenario snapshot after register learner-1042 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.856024+05:30 TC18 scenario snapshot queue-before-concurrent-drops learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.866023100+05:30 TC18 scenario snapshot queue-before-concurrent-drops learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.874039100+05:30 TC18 scenario snapshot queue-before-concurrent-drops learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.883030600+05:30 TC18 scenario snapshot queue-before-concurrent-drops learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.894019500+05:30 TC18 scenario concurrent request 1 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.896060200+05:30 TC18 scenario concurrent request 2 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.903034200+05:30 TC18 scenario snapshot after concurrent requests learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.909033700+05:30 TC18 scenario snapshot after concurrent requests learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.916023+05:30 TC18 scenario snapshot after concurrent requests learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.924021100+05:30 TC18 scenario snapshot after concurrent requests learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.934027500+05:30 TC18 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.946030700+05:30 TC18 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.954268300+05:30 TC18 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:40.960264+05:30 TC18 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:40.970295300+05:30 END TC18 PASS
+2026-11-19T23:19:40.971267800+05:30 BEGIN TC19 Missing mandatory fields
+2026-11-19T23:19:40.978260300+05:30 TC19 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:40.986277400+05:30 TC19 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:40.993299300+05:30 TC19 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.001261800+05:30 TC19 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.010279700+05:30 TC19 cleanup drop learner-1003 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.021267500+05:30 TC19 cleanup snapshot cleanup-1 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.030266800+05:30 TC19 cleanup snapshot cleanup-1 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.040268700+05:30 TC19 cleanup snapshot cleanup-1 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.049267600+05:30 TC19 cleanup snapshot cleanup-1 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.060264300+05:30 TC19 cleanup drop learner-1042 DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/enrollments/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.067264800+05:30 TC19 cleanup snapshot cleanup-2 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.076263300+05:30 TC19 cleanup snapshot cleanup-2 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.084267100+05:30 TC19 cleanup snapshot cleanup-2 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.091775400+05:30 TC19 cleanup snapshot cleanup-2 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.099182100+05:30 TC19 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.107191600+05:30 TC19 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.115176600+05:30 TC19 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.122197800+05:30 TC19 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.132178300+05:30 TC19 scenario missing learner ID POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 400 PASS
+2026-11-19T23:19:41.181110400+05:30 TC19 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.186118+05:30 TC19 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.191120200+05:30 TC19 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.196110700+05:30 TC19 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.203111300+05:30 END TC19 PASS
+2026-11-19T23:19:41.204111900+05:30 BEGIN TC20 Malformed request
+2026-11-19T23:19:41.209109600+05:30 TC20 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.215111700+05:30 TC20 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.220113400+05:30 TC20 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.225555300+05:30 TC20 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.230566700+05:30 TC20 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.234610300+05:30 TC20 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.240622400+05:30 TC20 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.247565200+05:30 TC20 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.254575200+05:30 TC20 scenario malformed JSON POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 400 PASS
+2026-11-19T23:19:41.261574300+05:30 TC20 scenario numeric learner ID POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 400 PASS
+2026-11-19T23:19:41.266571100+05:30 TC20 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.270608300+05:30 TC20 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.276593900+05:30 TC20 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.281569+05:30 TC20 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.296563900+05:30 END TC20 PASS
+2026-11-19T23:19:41.297569700+05:30 BEGIN TC21 Invalid identifiers
+2026-11-19T23:19:41.302569600+05:30 TC21 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.306608300+05:30 TC21 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.312568700+05:30 TC21 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.318574100+05:30 TC21 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.323566900+05:30 TC21 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.329098400+05:30 TC21 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.333108300+05:30 TC21 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.338196500+05:30 TC21 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.345178600+05:30 TC21 scenario surrounding whitespace POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 400 PASS
+2026-11-19T23:19:41.352315600+05:30 TC21 scenario identifier longer than 100 POST http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations -> 400 PASS
+2026-11-19T23:19:41.357312100+05:30 TC21 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.361332700+05:30 TC21 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.366312400+05:30 TC21 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.371306100+05:30 TC21 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.376306300+05:30 END TC21 PASS
+2026-11-19T23:19:41.377315300+05:30 BEGIN TC22 Unsupported method
+2026-11-19T23:19:41.383307800+05:30 TC22 cleanup snapshot cleanup-0 learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.388305400+05:30 TC22 cleanup snapshot cleanup-0 learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.392307200+05:30 TC22 cleanup snapshot cleanup-0 learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.397309200+05:30 TC22 cleanup snapshot cleanup-0 learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.403308500+05:30 TC22 before snapshot before learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.407310100+05:30 TC22 before snapshot before learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.412308500+05:30 TC22 before snapshot before learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.418305600+05:30 TC22 before snapshot before learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.431314700+05:30 TC22 scenario delete lookup endpoint DELETE http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 405 PASS
+2026-11-19T23:19:41.443320500+05:30 TC22 after snapshot after learner-1001 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1001 -> 200 PASS
+2026-11-19T23:19:41.452312400+05:30 TC22 after snapshot after learner-1002 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1002 -> 200 PASS
+2026-11-19T23:19:41.459312700+05:30 TC22 after snapshot after learner-1003 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1003 -> 200 PASS
+2026-11-19T23:19:41.465307500+05:30 TC22 after snapshot after learner-1042 GET http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations/learner-1042 -> 200 PASS
+2026-11-19T23:19:41.473318800+05:30 END TC22 PASS
+2026-11-19T23:19:41.502310600+05:30 TOTAL scenarios=22 pass=21 fail=0 not-executed=1 requests=643

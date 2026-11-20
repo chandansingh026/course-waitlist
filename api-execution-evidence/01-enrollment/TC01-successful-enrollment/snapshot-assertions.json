@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC01",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Learner enrolled with one occupied seat",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}

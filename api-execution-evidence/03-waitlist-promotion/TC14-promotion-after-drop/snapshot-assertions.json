@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC14",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Both sequential promotions reflected in state",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}

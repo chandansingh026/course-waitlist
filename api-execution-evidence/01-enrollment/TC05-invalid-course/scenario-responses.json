@@ -1,0 +1,19 @@
+[ {
+  "sequence" : 143,
+  "testCaseId" : "TC05",
+  "scenario" : "Unknown offering",
+  "phase" : "scenario",
+  "step" : "unknown offering",
+  "httpStatus" : 404,
+  "headers" : {
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Offering not found\",\"instance\":\"/api/v1/offerings/unknown/registrations\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+  "timestamp" : "2026-11-19T23:19:37.061064400+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+} ]

@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC22",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Rejected operation leaves observed statuses unchanged",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}

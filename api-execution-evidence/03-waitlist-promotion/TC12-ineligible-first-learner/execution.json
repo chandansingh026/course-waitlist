@@ -1,0 +1,11 @@
+{
+  "id" : "TC12",
+  "name" : "First waiter becomes ineligible",
+  "folder" : "03-waitlist-promotion/TC12-ineligible-first-learner",
+  "status" : "NOT EXECUTED",
+  "reason" : "The running application uses an immutable eligibility fixture and exposes no API to change eligibility after waitlisting. No mock or business-logic change was used.",
+  "failures" : [ ],
+  "requests" : [ ],
+  "responses" : [ ],
+  "snapshots" : [ ]
+}

@@ -1,0 +1,46 @@
+{
+  "request" : {
+    "sequence" : 625,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "scenario",
+    "step" : "surrounding whitespace",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "29"
+    },
+    "body" : "{\"learnerId\":\" learner-1001\"}",
+    "timestamp" : "2026-11-19T23:19:41.339178800+05:30",
+    "expected" : {
+      "httpStatus" : [ 400 ],
+      "responseFields" : {
+        "status" : 400
+      }
+    }
+  },
+  "response" : {
+    "sequence" : 625,
+    "testCaseId" : "TC21",
+    "scenario" : "Invalid identifiers",
+    "phase" : "scenario",
+    "step" : "surrounding whitespace",
+    "httpStatus" : 400,
+    "headers" : {
+      "Content-Type" : [ "application/problem+json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"detail\":\"Identifiers must be non-blank, at most 100 characters, and have no surrounding whitespace\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations\",\"status\":400,\"title\":\"Bad Request\",\"type\":\"urn:course-waitlist:invalid\"}",
+    "timestamp" : "2026-11-19T23:19:41.343182700+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }
+}

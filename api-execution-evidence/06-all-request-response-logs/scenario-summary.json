@@ -1,0 +1,177 @@
+[ {
+  "id" : "TC01",
+  "name" : "Successful enrollment",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 17,
+  "folder" : "01-enrollment/TC01-successful-enrollment"
+}, {
+  "id" : "TC02",
+  "name" : "Course full waitlist",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 32,
+  "folder" : "01-enrollment/TC02-course-full-waitlist"
+}, {
+  "id" : "TC03",
+  "name" : "Duplicate enrollment and waitlisting",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 52,
+  "folder" : "01-enrollment/TC03-duplicate-enrollment"
+}, {
+  "id" : "TC04",
+  "name" : "Ineligible learner",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 33,
+  "folder" : "01-enrollment/TC04-ineligible-learner"
+}, {
+  "id" : "TC05",
+  "name" : "Unknown offering",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 13,
+  "folder" : "01-enrollment/TC05-invalid-course"
+}, {
+  "id" : "TC06",
+  "name" : "Invalid learner ID",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 13,
+  "folder" : "01-enrollment/TC06-invalid-learner"
+}, {
+  "id" : "TC07",
+  "name" : "Successful drop",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 22,
+  "folder" : "02-course-dropping/TC07-successful-drop"
+}, {
+  "id" : "TC08",
+  "name" : "Drop when not enrolled",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 17,
+  "folder" : "02-course-dropping/TC08-invalid-drop"
+}, {
+  "id" : "TC09",
+  "name" : "Repeated drop",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 27,
+  "folder" : "02-course-dropping/TC09-repeated-drop"
+}, {
+  "id" : "TC10",
+  "name" : "Drop with empty waitlist",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 27,
+  "folder" : "02-course-dropping/TC10-drop-with-empty-waitlist"
+}, {
+  "id" : "TC11",
+  "name" : "FIFO promotion",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 50,
+  "folder" : "03-waitlist-promotion/TC11-fifo-promotion"
+}, {
+  "id" : "TC12",
+  "name" : "First waiter becomes ineligible",
+  "status" : "NOT EXECUTED",
+  "reason" : "The running application uses an immutable eligibility fixture and exposes no API to change eligibility after waitlisting. No mock or business-logic change was used.",
+  "failures" : [ ],
+  "requestCount" : 0,
+  "folder" : "03-waitlist-promotion/TC12-ineligible-first-learner"
+}, {
+  "id" : "TC13",
+  "name" : "Multiple waitlisted learners",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 51,
+  "folder" : "03-waitlist-promotion/TC13-multiple-waitlisted-learners"
+}, {
+  "id" : "TC14",
+  "name" : "Multiple sequential promotions",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 62,
+  "folder" : "03-waitlist-promotion/TC14-promotion-after-drop"
+}, {
+  "id" : "TC15",
+  "name" : "Simultaneous enrollment for final seat",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 34,
+  "folder" : "04-concurrency/TC15-simultaneous-enrollment"
+}, {
+  "id" : "TC16",
+  "name" : "Duplicate concurrent enrollment",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 49,
+  "folder" : "04-concurrency/TC16-duplicate-concurrent-enrollment"
+}, {
+  "id" : "TC17",
+  "name" : "Simultaneous drops",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 38,
+  "folder" : "04-concurrency/TC17-simultaneous-drops"
+}, {
+  "id" : "TC18",
+  "name" : "Concurrent promotion opportunities",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 42,
+  "folder" : "04-concurrency/TC18-concurrent-promotion"
+}, {
+  "id" : "TC19",
+  "name" : "Missing mandatory fields",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 23,
+  "folder" : "05-validation-and-errors/TC19-missing-fields"
+}, {
+  "id" : "TC20",
+  "name" : "Malformed request",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 14,
+  "folder" : "05-validation-and-errors/TC20-invalid-request"
+}, {
+  "id" : "TC21",
+  "name" : "Invalid identifiers",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 14,
+  "folder" : "05-validation-and-errors/TC21-invalid-identifiers"
+}, {
+  "id" : "TC22",
+  "name" : "Unsupported method",
+  "status" : "PASS",
+  "reason" : "",
+  "failures" : [ ],
+  "requestCount" : 13,
+  "folder" : "05-validation-and-errors/TC22-unsupported-method"
+} ]

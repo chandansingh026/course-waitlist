@@ -1,0 +1,47 @@
+{
+  "request" : {
+    "sequence" : 561,
+    "testCaseId" : "TC18",
+    "scenario" : "Concurrent promotion opportunities",
+    "phase" : "scenario",
+    "step" : "register learner-1042",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "36"
+    },
+    "body" : "{\r\n  \"learnerId\" : \"learner-1042\"\r\n}",
+    "timestamp" : "2026-11-19T23:19:40.807029700+05:30",
+    "expected" : {
+      "httpStatus" : [ 201 ],
+      "responseFields" : {
+        "status" : "WAITLISTED",
+        "waitlistPosition" : 2
+      }
+    }
+  },
+  "response" : {
+    "sequence" : 561,
+    "testCaseId" : "TC18",
+    "scenario" : "Concurrent promotion opportunities",
+    "phase" : "scenario",
+    "step" : "register learner-1042",
+    "httpStatus" : 201,
+    "headers" : {
+      "Content-Type" : [ "application/json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:40 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"WAITLISTED\",\"waitlistPosition\":2,\"created\":true}",
+    "timestamp" : "2026-11-19T23:19:40.813052300+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }
+}

@@ -1,0 +1,296 @@
+﻿[
+    {
+        "testCaseId":  "TC01",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Learner enrolled with one occupied seat",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC02",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Two enrolled, first waiter correct",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC03",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Duplicates preserve enrolled count and waitlist position",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC04",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Rejected operation leaves observed statuses unchanged",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC05",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Rejected operation leaves observed statuses unchanged",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC06",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Rejected operation leaves observed statuses unchanged",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC07",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Learner dropped and seat released",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC08",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Rejected operation leaves observed statuses unchanged",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC09",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Repeated drop leaves prior drop intact",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC10",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Empty-waitlist drop leaves one seat free",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC11",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "First waiter promoted, second remains waiting",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC13",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Multiple waiters retain FIFO positions",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC14",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Both sequential promotions reflected in state",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC15",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Last-seat contention leaves capacity full and two waiting",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC16",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Concurrent duplicates leave one observed active learner",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC17",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Both concurrent drops reflected in state",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC18",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Both concurrent promotions reflected in state",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC19",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Rejected operation leaves observed statuses unchanged",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC20",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Rejected operation leaves observed statuses unchanged",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC21",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Rejected operation leaves observed statuses unchanged",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    },
+    {
+        "testCaseId":  "TC22",
+        "checks":  [
+                       {
+                           "assertion":  "Observed enrolled count does not exceed capacity",
+                           "result":  "PASS"
+                       },
+                       {
+                           "assertion":  "Rejected operation leaves observed statuses unchanged",
+                           "result":  "PASS"
+                       }
+                   ],
+        "status":  "PASS"
+    }
+]

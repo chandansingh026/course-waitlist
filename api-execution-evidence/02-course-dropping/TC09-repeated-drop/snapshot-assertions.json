@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC09",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Repeated drop leaves prior drop intact",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}

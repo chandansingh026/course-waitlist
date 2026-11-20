@@ -1,0 +1,12 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+
+course:
+  offering-id: CS101-FALL
+  capacity: 10
+  eligible-learner-ids: >-
+    learner-1001,learner-1002,learner-1003,learner-1004,learner-1005,
+    learner-1006,learner-1007,learner-1008,learner-1009,learner-1010,
+    learner-1011,learner-1012,learner-1013,learner-1014,learner-1015,
+    learner-1016,learner-1017,learner-1018,learner-1019,learner-1042

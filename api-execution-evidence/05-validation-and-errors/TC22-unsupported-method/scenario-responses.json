@@ -1,0 +1,20 @@
+[ {
+  "sequence" : 639,
+  "testCaseId" : "TC22",
+  "scenario" : "Unsupported method",
+  "phase" : "scenario",
+  "step" : "delete lookup endpoint",
+  "httpStatus" : 405,
+  "headers" : {
+    "Allow" : [ "GET" ],
+    "Content-Type" : [ "application/problem+json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Date" : [ "Thu, 19 Nov 2026 17:49:41 GMT" ],
+    "Connection" : [ "close" ]
+  },
+  "body" : "{\"detail\":\"Request could not be processed\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations/learner-1001\",\"status\":405,\"title\":\"Method Not Allowed\",\"type\":\"urn:course-waitlist:invalid-request\"}",
+  "timestamp" : "2026-11-19T23:19:41.428306600+05:30",
+  "transportError" : null,
+  "actual" : "HTTP status and specified fields matched",
+  "result" : "PASS"
+} ]

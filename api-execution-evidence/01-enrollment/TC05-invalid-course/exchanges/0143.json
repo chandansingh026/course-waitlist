@@ -1,0 +1,46 @@
+{
+  "request" : {
+    "sequence" : 143,
+    "testCaseId" : "TC05",
+    "scenario" : "Unknown offering",
+    "phase" : "scenario",
+    "step" : "unknown offering",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/unknown/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "28"
+    },
+    "body" : "{\"learnerId\":\"learner-1001\"}",
+    "timestamp" : "2026-11-19T23:19:37.053932100+05:30",
+    "expected" : {
+      "httpStatus" : [ 404 ],
+      "responseFields" : {
+        "status" : 404
+      }
+    }
+  },
+  "response" : {
+    "sequence" : 143,
+    "testCaseId" : "TC05",
+    "scenario" : "Unknown offering",
+    "phase" : "scenario",
+    "step" : "unknown offering",
+    "httpStatus" : 404,
+    "headers" : {
+      "Content-Type" : [ "application/problem+json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:37 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"detail\":\"Offering not found\",\"instance\":\"/api/v1/offerings/unknown/registrations\",\"status\":404,\"title\":\"Not Found\",\"type\":\"urn:course-waitlist:not_found\"}",
+    "timestamp" : "2026-11-19T23:19:37.061064400+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "request" : {
+    "sequence" : 125,
+    "testCaseId" : "TC04",
+    "scenario" : "Ineligible learner",
+    "phase" : "scenario",
+    "step" : "register not-eligible",
+    "method" : "POST",
+    "url" : "http://127.0.0.1:8080/api/v1/offerings/CS101-FALL/registrations",
+    "headers" : {
+      "Host" : "127.0.0.1:8080",
+      "Accept" : "application/json, application/problem+json",
+      "User-Agent" : "course-waitlist-live-evidence/1.0",
+      "Connection" : "close",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Content-Length" : "36"
+    },
+    "body" : "{\r\n  \"learnerId\" : \"not-eligible\"\r\n}",
+    "timestamp" : "2026-11-19T23:19:36.881687300+05:30",
+    "expected" : {
+      "httpStatus" : [ 422 ],
+      "responseFields" : {
+        "status" : 422,
+        "type" : "urn:course-waitlist:ineligible"
+      }
+    }
+  },
+  "response" : {
+    "sequence" : 125,
+    "testCaseId" : "TC04",
+    "scenario" : "Ineligible learner",
+    "phase" : "scenario",
+    "step" : "register not-eligible",
+    "httpStatus" : 422,
+    "headers" : {
+      "Content-Type" : [ "application/problem+json" ],
+      "Transfer-Encoding" : [ "chunked" ],
+      "Date" : [ "Thu, 19 Nov 2026 17:49:36 GMT" ],
+      "Connection" : [ "close" ]
+    },
+    "body" : "{\"detail\":\"Prerequisite is not satisfied\",\"instance\":\"/api/v1/offerings/CS101-FALL/registrations\",\"status\":422,\"title\":\"Unprocessable Content\",\"type\":\"urn:course-waitlist:ineligible\"}",
+    "timestamp" : "2026-11-19T23:19:36.887784+05:30",
+    "transportError" : null,
+    "actual" : "HTTP status and specified fields matched",
+    "result" : "PASS"
+  }
+}

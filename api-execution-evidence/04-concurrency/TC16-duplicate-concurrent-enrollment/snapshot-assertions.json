@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC16",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Concurrent duplicates leave one observed active learner",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}

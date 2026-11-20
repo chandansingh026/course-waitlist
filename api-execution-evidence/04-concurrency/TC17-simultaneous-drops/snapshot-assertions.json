@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC17",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Both concurrent drops reflected in state",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}

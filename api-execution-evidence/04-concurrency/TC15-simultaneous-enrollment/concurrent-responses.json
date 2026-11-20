@@ -1,0 +1,83 @@
+﻿[
+    {
+        "sequence":  440,
+        "testCaseId":  "TC15",
+        "scenario":  "Simultaneous enrollment for final seat",
+        "phase":  "scenario",
+        "step":  "concurrent request 1",
+        "httpStatus":  201,
+        "headers":  {
+                        "Content-Type":  [
+                                             "application/json"
+                                         ],
+                        "Transfer-Encoding":  [
+                                                  "chunked"
+                                              ],
+                        "Date":  [
+                                     "Thu, 19 Nov 2026 17:49:39 GMT"
+                                 ],
+                        "Connection":  [
+                                           "close"
+                                       ]
+                    },
+        "body":  "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1002\",\"status\":\"WAITLISTED\",\"waitlistPosition\":1,\"created\":true}",
+        "timestamp":  "2026-11-19T23:19:39.753222400+05:30",
+        "transportError":  null,
+        "actual":  "HTTP status and specified fields matched",
+        "result":  "PASS"
+    },
+    {
+        "sequence":  441,
+        "testCaseId":  "TC15",
+        "scenario":  "Simultaneous enrollment for final seat",
+        "phase":  "scenario",
+        "step":  "concurrent request 2",
+        "httpStatus":  201,
+        "headers":  {
+                        "Content-Type":  [
+                                             "application/json"
+                                         ],
+                        "Transfer-Encoding":  [
+                                                  "chunked"
+                                              ],
+                        "Date":  [
+                                     "Thu, 19 Nov 2026 17:49:39 GMT"
+                                 ],
+                        "Connection":  [
+                                           "close"
+                                       ]
+                    },
+        "body":  "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1003\",\"status\":\"ENROLLED\",\"waitlistPosition\":null,\"created\":true}",
+        "timestamp":  "2026-11-19T23:19:39.753222400+05:30",
+        "transportError":  null,
+        "actual":  "HTTP status and specified fields matched",
+        "result":  "PASS"
+    },
+    {
+        "sequence":  442,
+        "testCaseId":  "TC15",
+        "scenario":  "Simultaneous enrollment for final seat",
+        "phase":  "scenario",
+        "step":  "concurrent request 3",
+        "httpStatus":  201,
+        "headers":  {
+                        "Content-Type":  [
+                                             "application/json"
+                                         ],
+                        "Transfer-Encoding":  [
+                                                  "chunked"
+                                              ],
+                        "Date":  [
+                                     "Thu, 19 Nov 2026 17:49:39 GMT"
+                                 ],
+                        "Connection":  [
+                                           "close"
+                                       ]
+                    },
+        "body":  "{\"offeringId\":\"CS101-FALL\",\"learnerId\":\"learner-1042\",\"status\":\"WAITLISTED\",\"waitlistPosition\":2,\"created\":true}",
+        "timestamp":  "2026-11-19T23:19:39.753222400+05:30",
+        "transportError":  null,
+        "actual":  "HTTP status and specified fields matched",
+        "result":  "PASS"
+    }
+]

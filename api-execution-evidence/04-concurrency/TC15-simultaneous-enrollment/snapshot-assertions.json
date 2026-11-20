@@ -1,0 +1,14 @@
+﻿{
+    "testCaseId":  "TC15",
+    "checks":  [
+                   {
+                       "assertion":  "Observed enrolled count does not exceed capacity",
+                       "result":  "PASS"
+                   },
+                   {
+                       "assertion":  "Last-seat contention leaves capacity full and two waiting",
+                       "result":  "PASS"
+                   }
+               ],
+    "status":  "PASS"
+}
